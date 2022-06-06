@@ -1,7 +1,8 @@
 package br.com.conversormoedas;
 
 import java.io.IOException;
-import javax.swing.git;
+
+import javax.swing.JOptionPane;
 
 public class Inicio {
 
