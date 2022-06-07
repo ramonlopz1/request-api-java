@@ -1,4 +1,9 @@
 # request-api-java
+
+Uma biblioteca Java para acessar a API Core v2 baseada em HTTP do Dropbox. Este SDK também oferece suporte ao Core API v1 mais antigo, mas esse suporte será removido em algum momento.
+
+![Imagem](https://img1.gratispng.com/20180607/wic/kisspng-computer-icons-currency-trade-clip-art-currency-converter-5b1979f4968772.0173713615283962766166.jpg)
+
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
