@@ -32,3 +32,16 @@ Requesting API, JSON Parse, JOptionPane
 
 
 ![gifs](https://www.alura.com.br/artigos/assets/escrever-bom-readme/i-15.gif)
+
+![image](https://user-images.githubusercontent.com/73000131/172485527-96289c64-b70b-4705-8b85-e9e225b6c83c.png)
+
+![image](https://user-images.githubusercontent.com/73000131/172485565-1ece3bac-8265-4ad6-9831-50649fec4f14.png)
+
+
+## Autores
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Guilherme Lima</sub>](https://github.com/guilhermeonrails) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
+| :---: | :---: | :---: |
+
+![image](https://user-images.githubusercontent.com/73000131/172485722-53656000-b5b7-41f9-b7de-c39d46579553.png)
+
