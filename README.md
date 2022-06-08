@@ -5,7 +5,6 @@
 
 <p align="center">
     <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-    <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>
     <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
     <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
@@ -17,8 +16,6 @@
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
-
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
@@ -58,7 +55,7 @@ Em seguida abra o aplicativo chamado Conversor
 No terminal, clone o projeto: 
 
 ```
-git clone [https://github.com/ramonlopz1/request-api-java.git](https://github.com/ramonlopz1/request-api-java.git)
+git clone https://github.com/ramonlopz1/request-api-java.git
 
 ```
 
