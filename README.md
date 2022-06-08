@@ -32,6 +32,7 @@
 ## Funcionalidades
 
 :heavy_check_mark: Converter moedas 
+:heavy_check_mark: HTTP Request
 
 ## Layout :dash:
 
