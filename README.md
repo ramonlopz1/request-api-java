@@ -66,9 +66,15 @@ No terminal, clone o projeto:
 
 git clone https://github.com/ramonlopz1/request-api-java.git
 
-## Linguagens, dependencias e libs utilizadas :books:
+## Linguagens, dependencias e pacotes utilizados :books:
 
-- Java, Maven, SpringBoot
+- Java;
+- Maven;
+- SpringBoot;
+- java.net; 
+- json.JSONObject;
+- javax.swing.JOptionPane;
+- 
 
 ## Desenvolvedores/Contribuintes :octocat:
 
