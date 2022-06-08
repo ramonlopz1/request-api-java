@@ -70,7 +70,7 @@ git clone https://github.com/ramonlopz1/request-api-java.git
 
 Liste o time responsável pelo desenvolvimento do projeto
 
-[<img src="https://avatars.githubusercontent.com/u/73000131?s=400&u=8e56b5ebae13e70129e5b740440beef8a08a0b36&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/settings/profile)
+[<img src="https://avatars.githubusercontent.com/u/73000131?s=400&u=8e56b5ebae13e70129e5b740440beef8a08a0b36&v=4" width=115><br><sub>Ramon Lopes</sub>](https://github.com/settings/profile)
 
 ## Licença 
 
