@@ -8,7 +8,7 @@ import static br.com.conversormoedas.InserirQuantiaOriginal.setQuantiaOriginal;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
-public class IniciarAplicacao {
+public class OrdemDeExecucao {
 
     public static int start() throws IOException {
         Object moedaConversora = null;
