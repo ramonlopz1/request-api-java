@@ -30,7 +30,7 @@
     
     Classes:
     - Main: starta a aplicação.
-    - OrdemDeExecucao: executa a lógica passos e renderiza os componentes do aplicativo;
+    - OrdemDeExecucao: executa a lógica de passos e renderiza os componentes do aplicativo;
     - Conversao: faz a conversão da moeda original para a moeda conversora;
     - MoneyAPI: faz requisição em api de cotações atualizado em tempo real.
 
