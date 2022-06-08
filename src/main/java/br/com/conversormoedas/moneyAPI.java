@@ -1,15 +1,17 @@
 package br.com.conversormoedas;
 
-import java.net.URI;
+// Pacote java.net: Permite abrir conexões via http
+import java.net.URI; // permite representar a referência de um URL ou URI
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+
+// Pacote JSONObject: permite manipular arquivo JSON.
 import org.json.JSONObject;
 
-
-public class moneyAPI {
+public class MoneyAPI {
    
-    public static String sendRequestAPI(String moedaConversora, String moedaOriginal) {
+    public static String sendRequestAPI(String moedaOriginal, String moedaConversora) {
         
         // Cria o Cliente HTTP, que realizará as requisições;
         HttpClient client = HttpClient.newHttpClient();
@@ -22,7 +24,7 @@ public class moneyAPI {
         
         return client.sendAsync(request, HttpResponse.BodyHandlers.ofString()) 
                 .thenApply(HttpResponse::body) // retorna o body da resposta
-                .thenApply(moneyAPI::parse) // aplica o método parse ao conteúdo vindo no body
+                .thenApply(MoneyAPI::parse) // aplica o método parse ao conteúdo vindo no body
                 .join();  // junta tudo e retorna os dados do JSON.
     }
     
