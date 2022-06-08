@@ -10,6 +10,7 @@ public class InserirMoedaOriginal {
     
     public static Object setMoedaOriginal() {
         
+        // Renderiza o input em que o usuário irá selecionar a moeda original.
         Object moedaOriginal = JOptionPane.showInputDialog(
                 null,
                 "Selecione a sua moeda:", // Texto do input

@@ -7,6 +7,7 @@ public class InserirMoedaConversora {
 
     public static Object setMoedaConversora() {
         
+        // Renderiza o input em que o usuário irá selecionar a moeda conversora.
         Object moedaConversora = JOptionPane.showInputDialog(
                 null,
                 "Selecione a moeda conversora:",

@@ -4,6 +4,8 @@ package br.com.conversormoedas;
 public class ListaDeMoedas {
     public static Object[] listaDeMoedas() {
         
+        
+        // Conversões disponíveis
         Object[] moedas = {
             "Real (BRL)",
             "Pesos Argentinos(ARS)",

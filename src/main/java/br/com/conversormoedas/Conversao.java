@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 public class Conversao {
     
     // Recebe a moeda Original, a moeda conversora e a quantia original
-    public String converter(String quantiaOriginal, Object moedaOriginal, Object moedaConversora)
+    public static String converter(String quantiaOriginal, Object moedaOriginal, Object moedaConversora)
             throws IOException {
 
         // Divide a quantia original, pelo valor da moedaConversora vinda da API, resultando no valorConvertido.
@@ -17,7 +17,7 @@ public class Conversao {
     }
 
     // Define o tipo de moeda e faz requisição para a API.
-    public String getValorMoedaConversoraAPI(Object moedaOriginal, Object moedaConversora) {
+    public static String getValorMoedaConversoraAPI(Object moedaOriginal, Object moedaConversora) {
         String moedaOriginalSTRING = formatarMoedas(moedaOriginal);
         String moedaConversoraSTRING = formatarMoedas(moedaConversora);
 

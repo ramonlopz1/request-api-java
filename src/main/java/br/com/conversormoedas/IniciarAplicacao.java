@@ -1,40 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package br.com.conversormoedas;
 
+import static br.com.conversormoedas.Conversao.converter;
 import static br.com.conversormoedas.FormatarMoedas.formatarMoedas;
 import static br.com.conversormoedas.InserirMoedaConversora.setMoedaConversora;
 import static br.com.conversormoedas.InserirMoedaOriginal.setMoedaOriginal;
 import static br.com.conversormoedas.InserirQuantiaOriginal.setQuantiaOriginal;
-import static br.com.conversormoedas.ListaDeMoedas.listaDeMoedas;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
 public class IniciarAplicacao {
 
     public static int start() throws IOException {
-        // Inicializa a variável moedaConversora do tipo Object;
         Object moedaConversora = null;
-
-        // Usuário insere a moeda original.
-        Object moedaOriginal = setMoedaOriginal();
-        
-
+        Object moedaOriginal = setMoedaOriginal(); // Usuário insere a moeda original.
         String quantiaOriginal;
         
-
-        // Testa se o usuário inseriu números com REGEX, 
-        // se sim, continua executando os próximos passos, senão, repete ação de pedir números.
         do {
             // Usuário insere a quantia.
             quantiaOriginal = (String) setQuantiaOriginal(moedaOriginal);
 
-            // Se for apenas números:
-            if (quantiaOriginal.matches("^[0-9]+$")) {
-                // Usuário insere a moeda conversora.
+            // Testa, com REGEX, se a quantiaOriginal contém apenas números
+            // Se houver apenas números ponto ou vírgula, continua a execução, senão repete a solicitação de números
+            if (quantiaOriginal.matches("^\\d+[.|,]\\d+[.|,]?\\d*")) {
                 
+                if(quantiaOriginal.contains(",")) {
+                    quantiaOriginal = quantiaOriginal.replace(",", ".");
+                }
+                
+                // Se o REGEX der match: Usuário seleciona a moeda conversora.
                 moedaConversora = setMoedaConversora();
 
                 // Impede que repita a moeda original, na moeda conversora:
@@ -42,25 +35,24 @@ public class IniciarAplicacao {
                     // Alerta
                     JOptionPane.showMessageDialog(null, "Você não pode escolher a mesma moeda.");
 
-                    // Usuário insere a moeda conversora.
+                    // Usuário insere a moeda conversora novamente.
                     moedaConversora = setMoedaConversora();
                 }
             }
+            // Repete os passos enquanto o REGEX não der match [0-9]
+        } while (quantiaOriginal.matches("^\\d+[.|,]\\d+[.|,]?\\d*") == false);
 
-        } while (quantiaOriginal.matches("^[0-9]+$") == false); // enquanto não inserir apenas números (REGEX)
+        // Após receber todas as informações, tratadas, dos inputs, realiza a conversão
+        String valorConvertido = converter(quantiaOriginal, moedaOriginal, moedaConversora);
 
-        Conversao c = new Conversao();
-
-        String resultadoFinal = c.converter(quantiaOriginal, moedaOriginal, moedaConversora);
-
-        int opcoesFinais = JOptionPane.showConfirmDialog(
+        int resultado = JOptionPane.showConfirmDialog(
                 null,
-                "Valor convertido: $" + resultadoFinal + " "
+                "Valor convertido: $" + valorConvertido + " "
                 + formatarMoedas(moedaConversora),
                 "Resultado",
                 JOptionPane.YES_NO_OPTION
         );
 
-        return opcoesFinais;
+        return resultado;
     }
 }
