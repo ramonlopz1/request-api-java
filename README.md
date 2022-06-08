@@ -18,9 +18,7 @@
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
-
-... 
-
+ 
 
 ## Descrição do projeto 
 
@@ -45,7 +43,6 @@
 
 ![image](https://user-images.githubusercontent.com/73000131/172507875-e985f7df-8c46-44d6-a016-d6d22fab23ba.png)
 
-... 
 
 ## Como rodar a aplicação :arrow_forward:
 
@@ -54,17 +51,11 @@ Em seguida abra o aplicativo chamado Conversor
 
 No terminal, clone o projeto: 
 
-```
 git clone https://github.com/ramonlopz1/request-api-java.git
-
-```
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
 - Java, Maven, SpringBoot
-
-...
-
 
 ## Desenvolvedores/Contribuintes :octocat:
 
