@@ -1,4 +1,3 @@
-
 package br.com.conversormoedas;
 
 import javax.swing.JOptionPane;

@@ -3,6 +3,7 @@ package br.com.conversormoedas;
 // Nos inputs temos a String Real (BRL), Dolar (USD) e etc.
 // essa classe remove todos os elementos exceto o BRL e USD. Para que sejam passados no URL da API.
 // https://economia.awesomeapi.com.br/json/last/BRL-USD
+
 public class FormatarMoedas {
     public static String formatarMoedas(Object moeda) {
         String moedaSTR = (String) moeda;

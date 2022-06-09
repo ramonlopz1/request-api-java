@@ -1,4 +1,3 @@
-
 package br.com.conversormoedas;
 
 public class ListaDeMoedas {
@@ -7,12 +6,18 @@ public class ListaDeMoedas {
         
         // Conversões disponíveis
         Object[] moedas = {
-            "Real (BRL)",
-            "Pesos Argentinos(ARS)",
+            "Coroa Norueguesa (NOK)",
+            "Boliviano (BOB)",
             "Dolar (USD)",
-            "EURO (EUR)",
+            "Dolar Canadense (CAD)",
+            "Dolar Hong Kong (HKD)",
+            "Euro (EUR)",
+            "Franco congolês (CDF)",
             "Libras Esterlinas (GBP)",
-            "Pesos Chilenos (LBR)"
+            "Pesos Argentinos(ARS)",
+            "Pesos Chilenos (CLP)",
+            "Real (BRL)",
+            "Yen Japones (JPY)",
         };
         
         return moedas;

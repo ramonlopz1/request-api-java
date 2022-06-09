@@ -21,7 +21,7 @@ public class OrdemDeExecucao {
 
             // Testa, com REGEX, se a quantiaOriginal contém apenas números
             // Se houver apenas números ponto ou vírgula, continua a execução, senão repete a solicitação de números
-            if (quantiaOriginal.matches("^\\d+[.|,]\\d+[.|,]?\\d*")) {
+            if (quantiaOriginal.matches("^\\d+[.|,]?\\d+[.|,]?\\d*")) {
                 
                 if(quantiaOriginal.contains(",")) {
                     quantiaOriginal = quantiaOriginal.replace(",", ".");
@@ -40,7 +40,7 @@ public class OrdemDeExecucao {
                 }
             }
             // Repete os passos enquanto o REGEX não der match [0-9]
-        } while (quantiaOriginal.matches("^\\d+[.|,]\\d+[.|,]?\\d*") == false);
+        } while (quantiaOriginal.matches("^\\d+[.|,]?\\d+[.|,]?\\d*") == false);
 
         // Após receber todas as informações, tratadas, dos inputs, realiza a conversão
         String valorConvertido = converter(quantiaOriginal, moedaOriginal, moedaConversora);

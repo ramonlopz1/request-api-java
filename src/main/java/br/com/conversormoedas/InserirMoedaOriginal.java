@@ -1,4 +1,3 @@
-
 package br.com.conversormoedas;
 
 import static br.com.conversormoedas.ListaDeMoedas.listaDeMoedas;
